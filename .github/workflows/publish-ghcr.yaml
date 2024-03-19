@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and Push the Image
         run: |
-          docker login --username kennetheversole --password ${{ secrets.PACKAGE_SECRET }}
+          docker login --username kennetheversole --password ${{ secrets.PACKAGE_SECRET }} ghcr.io
           docker build . --tag ghcr.io/kennetheversole/eversole_dev:latest
           docker push ghcr.io/kennetheversole/eversole_dev:latest
