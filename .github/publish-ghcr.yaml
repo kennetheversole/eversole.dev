@@ -1,0 +1,20 @@
+---
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - main
+
+
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@2
+      - name: Build and Push the Image
+        run: |
+          docker login --username kennetheversole --password ${{ PACKAGE_SECRET }}
+          docker build . --tag ghcr.io/kennetheversole/eversole_dev:latest
+          docker push ghcr.io/kennetheversole/eversole_dev:latest
