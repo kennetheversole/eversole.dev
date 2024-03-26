@@ -1,21 +1,43 @@
-use yew::prelude::*;
+mod components;
 
-#[function_component]
-fn App() -> Html {
+
+use yew::prelude::*;
+use yew_router::prelude::*;
+use yew_router::Routable;
+
+use components::{ 
+    nav::Nav,
+    aboutme::AboutMe
+};
+
+
+#[derive(Clone, Routable, PartialEq)]
+pub enum Route {
+    #[at("/")]
+    Home,
+    #[at("/aboutme")]
+    AboutMe,
+    #[not_found]
+    #[at("/404")]
+    NotFound,
+
+}
+
+fn switch(route: Route) -> Html {
+    match route {
+        Route::Home => html! { <Nav/> },
+        Route::AboutMe => html! { <AboutMe/> },
+        Route::NotFound => html! { <h1>{ "404" }</h1> },
+    }
+}
+
+#[function_component(App)]
+fn app() -> Html {
     html! {
-     <>
-         <div>
-            <h1>{"Hello, Welcome!"}</h1>
-            <p>{"My name is Kenneth and this is my little part of the internet"}</p>
-            <h3>{"Contact me!"}</h3>
-            <p>
-                <ul>                 
-                    <li><a href="mailto:keversole@eversole.dev">{"Kenneth@eversole.dev"}</a></li>
-                    <li><a href="https://github.com/kennetheversole">{"Github"}</a></li>
-                </ul>
-            </p>
-         </div>
-     </>
+        <BrowserRouter>
+            <Switch<Route> render={switch} />
+        </BrowserRouter>
+
     }
 }
 
