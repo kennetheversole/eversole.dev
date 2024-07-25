@@ -3,14 +3,24 @@ base_url = "https://eversole.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+# The default language; used in feeds.
+default_language = "en"
+
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
+# The site theme to use.
+theme = "after-dark"
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
+
 
 [extra]
-# Put all your custom variables here
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
