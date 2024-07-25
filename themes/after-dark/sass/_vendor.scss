@@ -1,5 +1,5 @@
 html {
-  font-size: 12px
+  font-size: 14px
 }
 
 * {
@@ -8,10 +8,10 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: BebasNeueRegular;
   word-wrap: break-word
 }
 
@@ -180,7 +180,7 @@ a:hover {
 .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
   font-size: 1rem;
   font-style: normal;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
+  font-family: BebasNeueRegular
 }
 
 .hack blockquote, .hack code, .hack em, .hack strong {
