@@ -1,0 +1,12 @@
+name = "keversole"
+pages_build_output_dir = "public"
+compatibility_date = "2023-05-22"
+
+[vars]
+ZOLA_VERSION = "0.15.3"
+
+[env.production]
+compatibility_date = "2023-05-22"
+
+[env.production.vars]
+ZOLA_VERSION = "0.15.3"
