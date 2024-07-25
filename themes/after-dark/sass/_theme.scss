@@ -1,5 +1,5 @@
 :root {
-  --screen-size-small: 30em; /* breakpoint reference only */
+ --screen-size-small: 30em; /* breakpoint reference only */
 }
 @keyframes intro {
   0% {
@@ -76,7 +76,7 @@ figure a[rel*="external"] {
   content: "";
 }
 html {
-  font-size: 13px;
+  font-size: 18px;
 }
 .hack pre {
   font-size: 17px;
