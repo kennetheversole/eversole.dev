@@ -1,5 +1,6 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
+description = "The personal site for Kenneth Eversole"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -12,15 +13,30 @@ build_search_index = true
 
 # The site theme to use.
 theme = "after-dark"
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
 
-
-[extra]
 taxonomies = [
     # You can enable/disable RSS
     {name = "categories", rss = true},
     {name = "tags", rss = true},
 ]
+
+[markdown]
+highlight_code = true
+
+
+[extra]
+
+profile_photo = "/images/profile_photo.svg"
+#profiles
+github = "kennetheversole"
+
+
+favicon = "/images/favicon.svg"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "https://github.com/kennetheversole", name = "Github"},
+]
+after_dark_title = "Eversole blog"
+author = "Kenneth Eversole"
