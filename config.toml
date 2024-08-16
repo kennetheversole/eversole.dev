@@ -1,24 +1,19 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
 description = "The personal site for Kenneth Eversole"
-
+title = "Eversole.dev"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 # The default language; used in feeds.
 default_language = "en"
 
-
+generate_feeds = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
 # The site theme to use.
-theme = "after-dark"
+taxonomies = [{ name = "tags" }]
 
-taxonomies = [
-    # You can enable/disable RSS
-    {name = "categories", rss = true},
-    {name = "tags", rss = true},
-]
 
 [markdown]
 highlight_code = true
@@ -26,17 +21,27 @@ highlight_code = true
 
 [extra]
 
+theme = "auto"
+
+menu = [
+    { name = "/blog", url = "/blog", weight = 1 },
+    { name = "/projects", url = "/projects", weight = 2 },
+    { name = "/about", url = "/about", weight = 3 },
+    { name = "/tags", url = "/tags", weight = 4 },
+]
+
+socials = [
+    { name = "twitter", url = "https://x.com/kennetheversole", icon = "twitter" },
+    { name = "github", url = "https://github.com/kennetheversole/", icon = "github" },
+]
+
+
+
 profile_photo = "/images/profile_photo.svg"
 #profiles
 github = "kennetheversole"
-
+linkedin = "kennetheversole"
+email = "kenneth@eversole.dev"
 
 favicon = "/images/favicon.svg"
-after_dark_menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "https://github.com/kennetheversole", name = "Github"},
-]
-after_dark_title = "Eversole blog"
 author = "Kenneth Eversole"
