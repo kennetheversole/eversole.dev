@@ -21,6 +21,7 @@
 .logoimage{
     width: 75px;
     border: none;
+    pointer-events: none;
 }
 html {
   background-color: var(--bg-0);

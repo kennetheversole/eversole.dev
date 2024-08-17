@@ -21,7 +21,7 @@ highlight_code = true
 
 [extra]
 
-theme = "auto"
+theme = "dark"
 
 menu = [
     { name = "/blog", url = "/blog", weight = 1 },
