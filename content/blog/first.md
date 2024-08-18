@@ -2,6 +2,9 @@
 title = "Then there was something"
 date = 2024-07-25
 author = "Kenneth Eversole"
+
+[taxonomies]
+tags = ["welcome"]
 +++
 
 
