@@ -8,8 +8,9 @@ compile_sass = true
 default_language = "en"
 
 generate_feeds = true
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
+minify_html = true
+feed_filenames = ["atom.xml"]
 
 # The site theme to use.
 taxonomies = [{ name = "tags" }]
@@ -25,14 +26,14 @@ theme = "dark"
 
 menu = [
     { name = "blog", url = "/blog", weight = 1 },
-    { name = "projects", url = "/projects", weight = 2 },
-    { name = "about", url = "/about", weight = 3 },
-    { name = "tags", url = "/tags", weight = 4 },
+    { name = "about", url = "/about", weight = 2 },
+    { name = "tags", url = "/tags", weight = 3 },
 ]
 
 socials = [
-    { name = "twitter", url = "https://x.com/kennetheversole", icon = "twitter" },
+    { name = "x-twitter", url = "https://x.com/kennetheversole", icon = "x-twitter" },
     { name = "github", url = "https://github.com/kennetheversole/", icon = "github" },
+    { name = "rss", url = "https://eversole.dev/atom.xml", icon = "rss"}
 ]
 
 

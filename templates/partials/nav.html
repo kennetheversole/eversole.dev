@@ -8,6 +8,7 @@
     </div>
 
     <nav>
+        {% set rss_icon = load_data(path="static/social_icons/rss.svg") %}
         {% for menu in config.extra.menu | default(value=[]) %}
         <a href={{ get_url(path=menu.url) }} style="margin-left: 0.5em">{{ menu.name }}</a>
         {% endfor %}
