@@ -1,5 +1,5 @@
 +++
-title= "Who am I?"
+title= "Who am I"
 path = "about"
 +++
 
@@ -16,12 +16,13 @@ This exploration on a daily basis mirrors the systems I am building and research
 
 ### Hands on Technical
 
-The largest software project I am currently working is in my role at Cloudflare as Senior Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
+The largest software project I am currently working is in my role at Cloudflare as Senior Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform. Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
 
 #### Past technical experiences
 * An original member of the engineering team at [Balto AI](https://www.balto.ai/).
 * Consultant at Kicker.AI, and [Utopia Labs](https://utopialabs.com/)
 * Boeing
+
 
 
 
@@ -38,7 +39,8 @@ With that said, I will leave all of you with something I told the crew a during 
  > All forms of Art make life worth living.
  >
  
- 
+
+
 ### General Business
 
 In the last 10,000 years, humans have not invented a more efficient and organizational system  to harness the capabilities of human progress that does not involve economics. Therefore to understand the human interaction part of huge complex systems one must be well versed in  *business*. 
