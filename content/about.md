@@ -13,9 +13,10 @@ I am currently in middle of an exploration to deeply understand the intersection
 
 This exploration on a daily basis mirrors the systems I am building and researching...*complex*.  
 
+
 ### Hands on Technical
 
-The largest software project I am currently working is in my role at Cloudflare as Senior Software Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
+The largest software project I am currently working is in my role at Cloudflare as Senior Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
 
 #### Past technical experiences
 * An original member of the engineering team at [Balto AI](https://www.balto.ai/).
