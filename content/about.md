@@ -4,7 +4,7 @@ path = "about"
 +++
 
 
-I am currently in the middle of an exploration to deeply understand the intersections of highly complex systems and the maximization of their positive interactions with humans today and in the future. What this means on a high level is many systems humans deeply care about are not judged by being perfect engineering or scientific achievements, but by their net positive  impact on our fellow humans. In simple terms one could say I am on self discovery journey on defining what it means to a **Pragmatic futurist**.
+I am currently in the middle of an exploration to deeply understand the intersections of  [complex systems](https://link.springer.com/article/10.1007/s10699-023-09917-w) and the maximization of their positive impacts on and for humans. What this means on a high level is many systems humans deeply care about are not judged by being perfect engineering or scientific achievements, but by their net positive impact on our fellow humans. In simple terms, this to me is the key princple  of a **Pragmatic futurist**.
 
 
 > if a philosophical theory does not contribute directly to social progress then it is not worth much
@@ -15,6 +15,7 @@ This exploration on a daily basis mirrors the systems I am building and research
 
 
 ### Hands on Technical
+
 
 The largest software project I am currently working is in my role at Cloudflare as Senior Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform. Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
 
