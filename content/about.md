@@ -4,7 +4,7 @@ path = "about"
 +++
 
 
-I am currently in middle of an exploration to deeply understand the intersections of highly complex systems and the maximization of their positive interactions with humans today and in the future. What this means on a high level is many systems humans deeply care about are not judged by being perfect engineering or scientific achievements, but by their net positive  impact on our fellow humans. In simple terms one could say I am on self discovery journey on defining what it means to a **Pragmatic futurist**.
+I am currently in the middle of an exploration to deeply understand the intersections of highly complex systems and the maximization of their positive interactions with humans today and in the future. What this means on a high level is many systems humans deeply care about are not judged by being perfect engineering or scientific achievements, but by their net positive  impact on our fellow humans. In simple terms one could say I am on self discovery journey on defining what it means to a **Pragmatic futurist**.
 
 
 > if a philosophical theory does not contribute directly to social progress then it is not worth much
