@@ -4,25 +4,33 @@ path = "about"
 +++
 
 
-I am currently in the middle of an exploration to deeply understand the intersections of  [complex systems](https://link.springer.com/article/10.1007/s10699-023-09917-w) and the maximization of their positive impacts on and for humans. What this means on a high level is many systems humans deeply care about are not judged by being perfect engineering or scientific achievements, but by their net positive impact on our fellow humans. In simple terms, this to me is the key princple  of a **Pragmatic futurist**.
+I am currently in the middle of a life long exploration to deeply understand the intersections of  [complex systems](https://link.springer.com/article/10.1007/s10699-023-09917-w) and the maximization of their positive impacts on humans. To say this another way, I am of the mindset that in order for humans to build the these large systems, think of the Internet, Healthcare, or even putting humans on Mars. We must be both rooted in practical engineering and a romantic vision of an entity that has the largest net positive impact on our fellow humans. To take this farther, one cannot predict or try to leap forward humanity without accounting for pragmatic deployment of inventions or ideas. I like to call this ideology **Pragmatic futurism**.
 
 
 > if a philosophical theory does not contribute directly to social progress then it is not worth much
 > - <cite>https://plato.stanford.edu/entries/pragmatism/- </cite>
 
 
-This exploration on a daily basis mirrors the systems I am building and researching...*complex*.  
+This belief originates from over two decades of experience building, researching, and philosophizing the complex systems I interact with, live in, and want to grow.
 
 
 ### Hands on Technical
 
 
-The largest software project I am currently working is in my role at Cloudflare as Senior Software engineer on the [R2](https://developers.cloudflare.com/r2/) team, which is Cloudflare's S3 compatible object storage platform. Because the rate of adoption has been meteoric and the team is full of some of the most talented engineers I have worked with in my life, this experience has been the most day over day learning I have ever had. I will hopefully write many blogs about this growth, and the technical learnings  I have had during this experience in the future. If you want to me to talk about any thing specifically please reach out.
+The most impactful system most people think of to date is the Internet. In my role as a Senior Software engineer at Cloudflare, I help build and maintain many of the core primitives software systems that have become synonymous for the Internet.
+Specifically, I work on the [R2](https://developers.cloudflare.com/r2/) team, which is the object storage platform for all of Cloudflare's products and many impactful companies we as all use. 
+>"Billions and billions (of logs)"
+> - <cite>https://blog.cloudflare.com/billions-and-billions-of-logs-scaling-ai-gateway-with-the-cloudflare/</cite>
+
+
+
 
 #### Past technical experiences
 * An original member of the engineering team at [Balto AI](https://www.balto.ai/).
 * Consultant at Kicker.AI, and [Utopia Labs](https://utopialabs.com/)
 * Boeing
+
+
 
 
 
@@ -44,7 +52,7 @@ With that said, I will leave all of you with something I told the crew a during 
 
 ### General Business
 
-In the last 10,000 years, humans have not invented a more efficient and organizational system  to harness the capabilities of human progress that does not involve economics. Therefore to understand the human interaction part of huge complex systems one must be well versed in  *business*. 
+It may be controversial and I am of the opinion, that in the last 10,000 years humans have not invented a more efficient and organizational system  to harness the capabilities of human progress that does not involve economics. Therefore to understand the human interaction part of huge complex systems one must be well versed in  *business*. 
 
 Here is a list of the various business related things I have done and am currently doing: 
 
@@ -52,10 +60,8 @@ Here is a list of the various business related things I have done and am current
 * Advised the technical direction and implementations for various startups in St. Louis, Missouri.
 * Technical due diligence for Venture Capital firms.
 
-### Human Interaction 
 
-
-To end where I started off, business and highly complex systems are extremely fascinating. It is the human interactions of those systems that sparks curiosity and a sense of transcendence in me.
+To end where I started off, business and complex systems are extremely fascinating individually but when they come together to positively move humanity forward is what sparks curiosity and a sense of transcendence in me.
 
 Let's build something impactful together  [Send me an Email](mailto:kenneth%eversole.dev)
 
