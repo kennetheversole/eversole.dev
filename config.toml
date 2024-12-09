@@ -31,7 +31,7 @@ menu = [
 ]
 
 socials = [
-    { name = "x-twitter", url = "https://x.com/kennetheversole", icon = "x-twitter" },
+    { name = "bluesky", url = "https://bsky.app/profile/kennetheversole.bsky.social", icon = "bluesky" },
     { name = "github", url = "https://github.com/kennetheversole/", icon = "github" },
     { name = "rss", url = "https://eversole.dev/atom.xml", icon = "rss"}
 ]
