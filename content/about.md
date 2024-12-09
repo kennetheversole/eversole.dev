@@ -32,11 +32,7 @@ Specifically, I work on the [R2](https://developers.cloudflare.com/r2/) team, wh
 
 
 
-
-
-
-
-### Helping build human experiences
+### Romantic Visionary Pursuits
 
 Recently, I have had the honor to join my  friends'  movie production company.  
 There is a currently a movie in post production that I cannot talk about too much now but please keep a look out in the future. 
@@ -52,16 +48,14 @@ With that said, I will leave all of you with something I told the crew a during 
 
 ### General Business
 
-I am of the opinion that in the last 10,000 years humans have not invented a more efficient system  to harnesses the capabilities of human progress that does not involve economics. Therefore to understand the human part of pragmatic deployment complex systems one must be well versed in  *business*. 
+Business, engineering, and artistic ideas are extremely fascinating individually. It is when they come together to positively move humanity forward is what sparks curiosity and a sense of transcendence in me.
 
-Here is a list of the various business related things I have done and am currently doing:
+While not exhaustive here is a list of the various business related things I am deeply passionate about:
 
-* Arch Grants
+* Arch Grants, a non profit economic development organization to help spur innovation St. Louis, Missouri.
 * Advised the technical direction and implementations for various startups in St. Louis, Missouri.
 * Technical due diligence for Venture Capital firms.
 
-
-To end where I started off, business and complex systems are extremely fascinating individually but when they come together to positively move humanity forward is what sparks curiosity and a sense of transcendence in me.
 
 Let's build something impactful together  [Send me an Email](mailto:kenneth%eversole.dev)
 
