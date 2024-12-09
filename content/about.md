@@ -40,14 +40,14 @@ Recently, I have had the honor to join my  friends'  movie production company.
 There is a currently a movie in post production that I cannot talk about too much now but please keep a look out in the future. 
 
 
-With that said, I will leave all of you with something I told the crew a during  night of filming.
+With that said, I will leave all of you with something I told the crew during night of filming.
 
 
  > All forms of Art make life worth living.
  >
  
 
-
+i
 ### General Business
 
 Business, engineering, and artistic ideas are extremely fascinating individually. It is when they come together to positively move humanity forward is what sparks curiosity and a sense of transcendence in me.
