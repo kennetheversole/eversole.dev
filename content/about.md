@@ -14,6 +14,7 @@ I am currently in the middle of a life long exploration to deeply understand the
 This belief originates from over two decades of experience building, researching, and philosophizing the complex systems I interact with, live in, and want to grow.
 
 
+
 ### Hands on Technical
 
 
@@ -27,8 +28,9 @@ Specifically, I work on the [R2](https://developers.cloudflare.com/r2/) team, wh
 
 #### Past technical experiences
 * An original member of the engineering team at [Balto AI](https://www.balto.ai/).
-* Consultant at Kicker.AI, and [Utopia Labs](https://utopialabs.com/)
-* Boeing
+* Consultant at Kicker.AI, and [Utopia Labs](https://utopialabs.com/)(Recently acquired by Coinbase)
+* Boeing, Apache Training Simulators
+
 
 
 
