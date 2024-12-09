@@ -52,9 +52,9 @@ With that said, I will leave all of you with something I told the crew a during 
 
 ### General Business
 
-It may be controversial and I am of the opinion, that in the last 10,000 years humans have not invented a more efficient and organizational system  to harness the capabilities of human progress that does not involve economics. Therefore to understand the human interaction part of huge complex systems one must be well versed in  *business*. 
+I am of the opinion that in the last 10,000 years humans have not invented a more efficient system  to harnesses the capabilities of human progress that does not involve economics. Therefore to understand the human part of pragmatic deployment complex systems one must be well versed in  *business*. 
 
-Here is a list of the various business related things I have done and am currently doing: 
+Here is a list of the various business related things I have done and am currently doing:
 
 * Arch Grants
 * Advised the technical direction and implementations for various startups in St. Louis, Missouri.
