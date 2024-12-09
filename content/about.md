@@ -15,7 +15,7 @@ This belief originates from over two decades of experience building, researching
 
 
 
-### Hands on Technical
+### Building Large System With Impact 
 
 
 The most impactful system most people think of to date is the Internet. In my role as a Senior Software engineer at Cloudflare, I help build and maintain many of the core primitives software systems that have become synonymous for the Internet.
