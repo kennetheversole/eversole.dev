@@ -47,7 +47,6 @@ With that said, I will leave all of you with something I told the crew during ni
  >
  
 
-i
 ### General Business
 
 Business, engineering, and artistic ideas are extremely fascinating individually. It is when they come together to positively move humanity forward is what sparks curiosity and a sense of transcendence in me.
