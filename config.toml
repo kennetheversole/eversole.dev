@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
-description = "The personal site for Kenneth Eversole"
+description = "The personal site of whom Kenneth has designed and built impactful systems that power global-scale operations, improve security, and drive efficiency. From leading infrastructure transformations at Cloudflare to optimizing AI-driven platforms at Balto, his career reflects a deep understanding of how technology shapes industries. He thrives at the intersection of engineering, business, and innovation, advising startups, conducting technical due diligence for venture capital firms, and even exploring creative storytelling through film production. Kenneth believes engineering should not only solve problems but also inspire new possibilities—pushing the boundaries of what’s possible while ensuring systems remain practical, resilient, and human-centered"
 title = "Eversole.dev"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -27,7 +27,7 @@ theme = "dark"
 menu = [
     { name = "blog", url = "/blog", weight = 1 },
     { name = "about", url = "/about", weight = 2 },
-    { name = "tags", url = "/tags", weight = 3 },
+    { name = "books", url = "/books", weight = 3 },
 ]
 
 socials = [
