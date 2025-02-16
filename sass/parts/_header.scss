@@ -117,30 +117,24 @@ h6 {
 
 h1::before {
     color: var(--primary-color);
-    content: "# ";
 }
 
 h2::before {
     color: var(--primary-color);
-    content: "## ";
 }
 
 h3::before {
     color: var(--primary-color);
-    content: "### ";
 }
 
 h4::before {
     color: var(--primary-color);
-    content: "#### ";
 }
 
 h5::before {
     color: var(--primary-color);
-    content: "##### ";
 }
 
 h6::before {
     color: var(--primary-color);
-    content: "###### ";
 }

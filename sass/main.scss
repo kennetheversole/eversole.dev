@@ -18,6 +18,35 @@
   --code-font: 'Josefin Sans';
 }
 
+
+.site-footer {
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Ensures space between left and right elements */
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start; /* Aligns socials to the left */
+}
+
+.subscribe-box {
+    display: flex;
+    justify-content: flex-end; /* Aligns subscribe box to the right */
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
 .logoimage{
     width: 75px;
     border: none;

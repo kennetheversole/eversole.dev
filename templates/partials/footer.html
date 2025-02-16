@@ -1,19 +1,28 @@
-<footer>
-        <br>
-        <hr>
+<footer class="site-footer">
+    <div class="footer-content">
+        <!-- Social Icons on the Left -->
+        <div class="socials">
+            {% for social in config.extra.socials | default(value=[]) %}
+            <a rel="me" href="{{ social.url }}" class="social">
+                <img alt="{{ social.name }}" src="{{ get_url(path="social_icons/" ~ social.icon ~ ".svg") }}">
+            </a>
+            {% endfor %}
+        </div>
+
+        <!-- Subscribe Box on the Right -->
+        <div class="subscribe-box">
+            <iframe src="https://embeds.beehiiv.com/929775ae-239a-4ebe-a0fa-028818022631?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+
+        </div>
+    </div>
+
+    <!-- Copyright centered below -->
+    <div class="copyright">
         <p id="copyright">
             Copyright &copy; 2024 - {{ now() | date(format="%Y") }}
             <strong {% if config.extra.commit %} title="Commit: {{config.extra.commit}}" {% endif %}>
                 Kenneth Eversole
             </strong>
         </p>
-        <div class="socials">
-
-            {% for social in config.extra.socials | default(value=[]) %}
-            <a rel="me" href="{{ social.url }}" class="social">
-                <img alt={{ social.name }} src={{ get_url(path="social_icons/" ~ social.icon ~ ".svg") }}>
-            </a>
-            {% endfor %}
-        </div>
-
+    </div>
 </footer>
