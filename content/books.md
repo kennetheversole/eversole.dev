@@ -11,3 +11,5 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
     - Author: Peter Attia, MD
 * The Anxious Generation
     - Author: Jonathan Haidt
+* The Lunar Men: Five Friends Whose Curiosity Changed the World
+    - Author: Jenny Uglow
