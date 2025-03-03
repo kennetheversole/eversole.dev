@@ -13,3 +13,7 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
     - Author: Jonathan Haidt
 * The Lunar Men: Five Friends Whose Curiosity Changed the World
     - Author: Jenny Uglow
+# Pre 2025
+I did not track this well but I typically read books around AI, Finance, or philosophy.
+
+
