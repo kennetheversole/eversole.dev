@@ -12,7 +12,10 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
 * The Anxious Generation
     - Author: Jonathan Haidt
 * The Lunar Men: Five Friends Whose Curiosity Changed the World
-    - Author: Jenny Uglow
+   - Author: Jenny Uglow
+* Pharmako-AI
+   - Author: K Allado-McDowell
+
 # Pre 2025
 I did not track this well but I typically read books around AI, Finance, or philosophy.
 
