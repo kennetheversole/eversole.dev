@@ -12,8 +12,6 @@ build_search_index = true
 minify_html = true
 feed_filenames = ["atom.xml"]
 
-# Generate sitemap for better SEO
-generate_sitemap = true
 
 # The site theme to use.
 taxonomies = [{ name = "tags", feed = true }]
