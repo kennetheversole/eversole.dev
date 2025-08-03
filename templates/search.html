@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<div class="search-container">
+    <h1>Search</h1>
+    <div class="search-box">
+        <input type="search" id="search" placeholder="Search posts..." autocomplete="off">
+        <div id="search-results"></div>
+    </div>
+</div>
+
+<script src="{{ get_url(path="search_index.en.js") }}"></script>
+<script src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+<script>
+window.searchIndex = elasticlunr.Index.load(window.searchIndex);
+
+const searchInput = document.getElementById("search");
+const searchResults = document.getElementById("search-results");
+
+function search() {
+    const query = searchInput.value.trim();
+    
+    if (query.length < 2) {
+        searchResults.innerHTML = "";
+        return;
+    }
+    
+    const results = window.searchIndex.search(query, {
+        bool: "OR",
+        expand: true
+    });
+    
+    if (results.length === 0) {
+        searchResults.innerHTML = '<p class="no-results">No results found</p>';
+        return;
+    }
+    
+    let html = '<div class="search-results-list">';
+    for (const result of results) {
+        const data = window.searchIndex.documentStore.getDoc(result.ref);
+        const date = data.date ? new Date(data.date).toLocaleDateString() : '';
+        
+        html += `
+            <article class="search-result">
+                <h3><a href="${data.url}">${data.title}</a></h3>
+                ${date ? `<time class="search-date">${date}</time>` : ''}
+                ${data.description ? `<p class="search-description">${data.description}</p>` : ''}
+            </article>
+        `;
+    }
+    html += '</div>';
+    
+    searchResults.innerHTML = html;
+}
+
+searchInput.addEventListener("input", search);
+
+// Autofocus search input
+searchInput.focus();
+</script>
+
+<style>
+.search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.search-box {
+    margin-top: 2rem;
+}
+
+#search {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--bg-1);
+    color: var(--text-0);
+    transition: border-color 0.2s;
+}
+
+#search:focus {
+    outline: none;
+    border-color: var(--color-primary, #3b82f6);
+}
+
+#search-results {
+    margin-top: 2rem;
+}
+
+.search-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.search-result {
+    padding: 1rem;
+    background-color: var(--bg-1);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-result:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-result h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.search-result a {
+    color: var(--text-0);
+    text-decoration: none;
+}
+
+.search-result a:hover {
+    color: var(--color-primary, #3b82f6);
+}
+
+.search-date {
+    font-size: 0.9rem;
+    color: var(--text-1);
+}
+
+.search-description {
+    margin: 0.5rem 0 0 0;
+    color: var(--text-1);
+    line-height: 1.6;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--text-1);
+    padding: 2rem;
+}
+</style>
+{% endblock main_content %}

@@ -57,6 +57,30 @@
          {% endif %}
      {% endif %}
 
+     {# Open Graph Image #}
+     {% if page.extra.og_image %}
+         <meta property="og:image" content="{{ get_url(path=page.extra.og_image) }}" />
+     {% elif config.extra.default_og_image %}
+         <meta property="og:image" content="{{ get_url(path=config.extra.default_og_image) }}" />
+     {% endif %}
+     
+     {# Additional Open Graph tags #}
+     <meta property="og:type" content="{% if page %}article{% else %}website{% endif %}" />
+     {% if current_url %}
+         <meta property="og:url" content="{{ current_url | safe }}" />
+     {% elif page %}
+         <meta property="og:url" content="{{ get_url(path=page.path) | safe }}" />
+     {% else %}
+         <meta property="og:url" content="{{ config.base_url | safe }}" />
+     {% endif %}
+     <meta property="og:site_name" content="{{ config.title }}" />
+     
+     {# Twitter Card tags #}
+     <meta name="twitter:card" content="summary_large_image" />
+     {% if config.extra.twitter_username %}
+         <meta name="twitter:creator" content="@{{ config.extra.twitter_username }}" />
+     {% endif %}
+
      {% if not page_has_description %}
          {% if page.description %}
              <meta name="description" content="{{ page.description }}" />
@@ -108,6 +132,13 @@
         {% endif %}
     {% endif %}
 
+    {# Cloudflare Web Analytics #}
+    {% if config.extra.cloudflare_analytics %}
+        <!-- Cloudflare Web Analytics -->
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ config.extra.cloudflare_analytics }}"}'></script>
+        <!-- End Cloudflare Web Analytics -->
+    {% endif %}
+
     {# Fancy Codeblock #}
     {% if config.extra.fancy_code %}
         <script src={{ get_url(path="js/codeblock.js") }}></script>
@@ -140,6 +171,9 @@
 
     {# RSS #}
     <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    
+    {# Web Manifest for PWA support #}
+    <link rel="manifest" href="{{ get_url(path="manifest.json") }}">
 
 
     {% set theme = config.extra.theme | default(value="toggle") %}
@@ -180,4 +214,127 @@
             <link rel="stylesheet" href="{{ get_url(path=stylesheet) }}">
         {% endfor %}
     {% endif %}
+
+    {# Structured Data (JSON-LD) #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        {% if page and page.date %}
+            "@type": "BlogPosting",
+            "headline": "{{ page.title }}",
+            "datePublished": "{{ page.date | date(format="%Y-%m-%d") }}",
+            {% if page.updated %}
+                "dateModified": "{{ page.updated | date(format="%Y-%m-%d") }}",
+            {% else %}
+                "dateModified": "{{ page.date | date(format="%Y-%m-%d") }}",
+            {% endif %}
+            {% if page.description %}
+                "description": "{{ page.description }}",
+            {% endif %}
+            "author": {
+                "@type": "Person",
+                "name": "{{ config.extra.author | default(value="Kenneth Eversole") }}",
+                {% if config.extra.email %}
+                    "email": "{{ config.extra.email }}",
+                {% endif %}
+                "url": "{{ config.base_url }}/about"
+            },
+            "publisher": {
+                "@type": "Person",
+                "name": "{{ config.extra.author | default(value="Kenneth Eversole") }}",
+                {% if config.extra.profile_photo %}
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{ get_url(path=config.extra.profile_photo) }}"
+                    }
+                {% endif %}
+            },
+            {% if page.extra.og_image %}
+                "image": "{{ get_url(path=page.extra.og_image) }}",
+            {% elif config.extra.default_og_image %}
+                "image": "{{ get_url(path=config.extra.default_og_image) }}",
+            {% endif %}
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{% if current_url %}{{ current_url | safe }}{% else %}{{ get_url(path=page.path) | safe }}{% endif %}"
+            }
+        {% elif page %}
+            "@type": "WebPage",
+            "name": "{{ page.title }}",
+            "url": "{% if current_url %}{{ current_url | safe }}{% else %}{{ get_url(path=page.path) | safe }}{% endif %}",
+            {% if page.description %}
+                "description": "{{ page.description }}",
+            {% endif %}
+            "author": {
+                "@type": "Person",
+                "name": "{{ config.extra.author | default(value="Kenneth Eversole") }}",
+                {% if config.extra.email %}
+                    "email": "{{ config.extra.email }}",
+                {% endif %}
+                "url": "{{ config.base_url }}/about"
+            },
+            {% if page.extra.og_image %}
+                "image": "{{ get_url(path=page.extra.og_image) }}",
+            {% elif config.extra.default_og_image %}
+                "image": "{{ get_url(path=config.extra.default_og_image) }}",
+            {% endif %}
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "{{ config.title }}",
+                "url": "{{ config.base_url }}"
+            }
+        {% else %}
+            "@type": "WebSite",
+            "name": "{{ config.title }}",
+            "url": "{{ config.base_url }}",
+            {% if config.description %}
+                "description": "{{ config.description }}",
+            {% endif %}
+            "author": {
+                "@type": "Person",
+                "name": "{{ config.extra.author | default(value="Kenneth Eversole") }}",
+                {% if config.extra.email %}
+                    "email": "{{ config.extra.email }}",
+                {% endif %}
+                {% if config.extra.profile_photo %}
+                    "image": "{{ get_url(path=config.extra.profile_photo) }}"
+                {% endif %}
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{{ config.base_url }}/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        {% endif %}
+    }
+    </script>
+
+    {# Additional Person schema for author #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ config.extra.author | default(value="Kenneth Eversole") }}",
+        "url": "{{ config.base_url }}",
+        {% if config.extra.email %}
+            "email": "{{ config.extra.email }}",
+        {% endif %}
+        {% if config.extra.profile_photo %}
+            "image": "{{ get_url(path=config.extra.profile_photo) }}",
+        {% endif %}
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Cloudflare"
+        },
+        "sameAs": [
+            {% if config.extra.github %}
+                "https://github.com/{{ config.extra.github }}",
+            {% endif %}
+            {% if config.extra.linkedin %}
+                "https://linkedin.com/in/{{ config.extra.linkedin }}"
+            {% endif %}
+        ]
+    }
+    </script>
 </head>

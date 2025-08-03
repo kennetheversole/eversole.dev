@@ -1,8 +1,101 @@
-{% extends "page.html" %}
+{% extends "base.html" %}
 
 {% block main_content %}
-    <main class="centered-header">
-        {{ post_macros::page_header(title="404")}}
-        <span>Page not found :(</span>
-    </main>
+<div class="error-page">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Page Not Found</h2>
+    <p class="error-message">
+        The page you're looking for doesn't exist or has been moved.
+    </p>
+    <div class="error-actions">
+        <a href="{{ config.base_url }}" class="btn btn-primary">Go Home</a>
+        <a href="{{ config.base_url }}/blog" class="btn btn-secondary">Browse Blog</a>
+    </div>
+</div>
+
+<style>
+.error-page {
+    text-align: center;
+    padding: 4rem 1rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    opacity: 0.1;
+    font-family: var(--font-family-heading);
+}
+
+.error-title {
+    font-size: 2.5rem;
+    margin: -3rem 0 1rem 0;
+    font-weight: 600;
+    font-family: var(--font-family-heading);
+}
+
+.error-message {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    max-width: 500px;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary, #3b82f6);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark, #2563eb);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-border, #e5e7eb);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-bg-secondary, #f3f4f6);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 6rem;
+    }
+    
+    .error-title {
+        font-size: 2rem;
+    }
+    
+    .error-message {
+        font-size: 1.125rem;
+    }
+}
+</style>
 {% endblock main_content %}

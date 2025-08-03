@@ -8,12 +8,15 @@ compile_sass = true
 default_language = "en"
 
 generate_feeds = true
-build_search_index = false
+build_search_index = true
 minify_html = true
 feed_filenames = ["atom.xml"]
 
+# Generate sitemap for better SEO
+generate_sitemap = true
+
 # The site theme to use.
-taxonomies = [{ name = "tags" }]
+taxonomies = [{ name = "tags", feed = true }]
 
 
 [markdown]
@@ -28,11 +31,13 @@ menu = [
     { name = "blog", url = "/blog", weight = 1 },
     { name = "about", url = "/about", weight = 2 },
     { name = "books", url = "/books", weight = 3 },
+    { name = "search", url = "/search", weight = 4 },
 ]
 
 socials = [
-    { name = "bluesky", url = "https://bsky.app/profile/kennetheversole.bsky.social", icon = "bluesky" },
     { name = "github", url = "https://github.com/kennetheversole/", icon = "github" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/kennetheversole/", icon = "linkedin" },
+    { name = "email", url = "mailto:kenneth@eversole.dev", icon = "email" },
     { name = "rss", url = "https://eversole.dev/atom.xml", icon = "rss"}
 ]
 
@@ -46,3 +51,9 @@ email = "kenneth@eversole.dev"
 
 favicon = "/images/favicon.svg"
 author = "Kenneth Eversole"
+
+# Open Graph default image (1200x630px recommended)
+default_og_image = "og-default.png"
+
+# Cloudflare Web Analytics - Get your token from the Cloudflare dashboard
+# cloudflare_analytics = "YOUR_CLOUDFLARE_ANALYTICS_TOKEN"

@@ -1,0 +1,21 @@
+{
+  "name": "Eversole.dev - Kenneth Eversole",
+  "short_name": "Eversole.dev",
+  "description": "The personal site of Kenneth Eversole - Senior Software Engineer at Cloudflare, focusing on engineering, innovation, and pragmatic futurism",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "education", "developer"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

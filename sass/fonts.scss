@@ -1,31 +1,10 @@
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf'), local('ttf');
+  font-weight: 100 700; /* Variable font supports weights 100-700 */
+  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf'), local('ttf');
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf'), local('ttf');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf'), local('ttf');
-  font-display: swap;
-}
+/* Import JetBrains Mono from CDN for code blocks */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
