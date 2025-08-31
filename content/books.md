@@ -7,17 +7,17 @@ path = "books"
 This is a comprehensive record of the books I have read, thoughtfully cataloged by the year of completion.
 
 # 2025
-- Outlive
+- [Outlive](https://www.goodreads.com/book/show/61153739-outlive)
     - Author: Peter Attia, MD
-* The Anxious Generation
+* [The Anxious Generation](https://www.goodreads.com/book/show/127116265-the-anxious-generation)
     - Author: Jonathan Haidt
-* The Lunar Men: Five Friends Whose Curiosity Changed the World
+* [The Lunar Men: Five Friends Whose Curiosity Changed the World](https://www.goodreads.com/book/show/87304.The_Lunar_Men)
    - Author: Jenny Uglow
-* Pharmako-AI
+* [Pharmako-AI](https://www.goodreads.com/book/show/57082316-pharmako-ai)
    - Author: K Allado-McDowell
-* Superintelligence: Paths, Dangers, Strategies
+* [Superintelligence: Paths, Dangers, Strategies](https://www.goodreads.com/book/show/20527133-superintelligence)
    - Author: Nick Bostrom
-* Abundance
+* [Abundance](https://www.goodreads.com/book/show/13187824-abundance)
    - Authors: Ezra Klein and Derek Thompson
 
 # Pre 2025
