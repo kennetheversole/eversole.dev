@@ -17,6 +17,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
    - Author: K Allado-McDowell
 * Superintelligence: Paths, Dangers, Strategies
    - Author: Nick Bostrom
+* Abundance
+   - Authors: Ezra Klein and Derek Thompson
 
 # Pre 2025
 I did not track this well but I typically read books around AI, Finance, or philosophy.
