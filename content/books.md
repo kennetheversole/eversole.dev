@@ -19,6 +19,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
    - Author: Nick Bostrom
 * [Abundance](https://en.wikipedia.org/wiki/Abundance:_The_Future_Is_Better_Than_You_Think)
    - Authors: Ezra Klein and Derek Thompson
+* [The Broken Heart of America](https://www.goodreads.com/book/show/51343985-the-broken-heart-of-america)
+   - Author: Walter Johnson
 
 # Pre 2025
 I did not track this well but I typically read books around AI, Finance, or philosophy.
