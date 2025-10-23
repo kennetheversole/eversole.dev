@@ -14,6 +14,9 @@ I am currently in the middle of a life long exploration to deeply understand the
 This belief originates from over two decades of experience building, researching, and philosophizing the complex systems I interact with, live in, and want to grow.
 
 
+### Founder & CEO of OpsCompanion
+
+I am currently the Founder and CEO of [OpsCompanion](https://opscompanion.ai/), where I am building the future of intelligent operations and system management.
 
 
 ### Building Large System With Impact 
