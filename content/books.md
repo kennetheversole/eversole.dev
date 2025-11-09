@@ -21,6 +21,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
    - Authors: Ezra Klein and Derek Thompson
 * [The Broken Heart of America](https://www.goodreads.com/book/show/51343985-the-broken-heart-of-america)
    - Author: Walter Johnson
+* [High Output Management](https://www.goodreads.com/book/show/324750.High_Output_Management)
+   - Author: Andrew Grove
 
 # Pre 2025
 I did not track this well but I typically read books around AI, Finance, or philosophy.
