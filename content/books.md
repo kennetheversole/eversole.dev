@@ -23,6 +23,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
    - Author: Walter Johnson
 * [High Output Management](https://www.goodreads.com/book/show/324750.High_Output_Management)
    - Author: Andrew Grove
+* [The Rational Optimist](https://en.wikipedia.org/wiki/The_Rational_Optimist)
+   - Author: Matt Ridley
 
 # Pre 2025
 I did not track this well but I typically read books around AI, Finance, or philosophy.
