@@ -44,7 +44,7 @@ function formatDate(dateStr: string): string {
   const d = new Date(dateStr + "T00:00:00");
   return d.toLocaleDateString("en-US", {
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric",
   });
 }
@@ -56,107 +56,56 @@ function buildOgMarkup(post: PostMeta) {
       style: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         width: "100%",
         height: "100%",
-        backgroundColor: "#121212",
-        padding: "60px",
+        backgroundColor: "#0a0a0a",
+        padding: "32px",
         fontFamily: "Josefin Sans",
       },
       children: [
-        // Top: domain
-        {
-          type: "div",
-          props: {
-            style: {
-              display: "flex",
-              alignItems: "center",
-              gap: "12px",
-            },
-            children: [
-              {
-                type: "div",
-                props: {
-                  style: {
-                    width: "12px",
-                    height: "12px",
-                    borderRadius: "50%",
-                    backgroundColor: "#0a00ff",
-                  },
-                },
-              },
-              {
-                type: "span",
-                props: {
-                  style: {
-                    fontSize: "24px",
-                    color: "#999",
-                    letterSpacing: "0.05em",
-                  },
-                  children: "eversole.dev",
-                },
-              },
-            ],
-          },
-        },
-        // Middle: title
+        // Inner card
         {
           type: "div",
           props: {
             style: {
               display: "flex",
               flexDirection: "column",
-              gap: "20px",
-              flex: "1",
               justifyContent: "center",
+              flex: "1",
+              backgroundColor: "#1a1a1a",
+              borderRadius: "24px",
+              padding: "60px 64px",
             },
             children: [
+              // Title
               {
-                type: "h1",
+                type: "div",
                 props: {
                   style: {
-                    fontSize: post.title.length > 50 ? "42px" : "52px",
+                    fontSize: post.title.length > 50 ? "48px" : "56px",
                     fontWeight: "700",
-                    color: "#e0e0e0",
-                    lineHeight: "1.2",
-                    margin: "0",
+                    color: "#ededed",
+                    lineHeight: "1.25",
                   },
                   children: post.title,
                 },
               },
-              // Tags
-              ...(post.tags.length > 0
-                ? [
-                    {
-                      type: "div",
-                      props: {
-                        style: {
-                          display: "flex",
-                          gap: "8px",
-                          flexWrap: "wrap" as const,
-                        },
-                        children: post.tags.map((tag) => ({
-                          type: "span",
-                          props: {
-                            style: {
-                              fontSize: "16px",
-                              color: "#888",
-                              backgroundColor: "#1e1e1e",
-                              padding: "4px 12px",
-                              borderRadius: "4px",
-                              border: "1px solid #333",
-                            },
-                            children: tag,
-                          },
-                        })),
-                      },
-                    },
-                  ]
-                : []),
+              // Date
+              {
+                type: "div",
+                props: {
+                  style: {
+                    fontSize: "24px",
+                    color: "#6b7b9e",
+                    marginTop: "20px",
+                  },
+                  children: formatDate(post.date),
+                },
+              },
             ],
           },
         },
-        // Bottom: author + date
+        // Bottom bar
         {
           type: "div",
           props: {
@@ -164,27 +113,70 @@ function buildOgMarkup(post: PostMeta) {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              padding: "20px 8px 0 8px",
             },
             children: [
+              // Pill badge with title | author
               {
-                type: "span",
+                type: "div",
                 props: {
                   style: {
-                    fontSize: "22px",
-                    color: "#999",
-                    fontWeight: "600",
+                    display: "flex",
+                    backgroundColor: "#1a1a1a",
+                    borderRadius: "8px",
+                    padding: "10px 20px",
+                    maxWidth: "70%",
                   },
-                  children: "Kenneth Eversole",
+                  children: [
+                    {
+                      type: "span",
+                      props: {
+                        style: {
+                          fontSize: "18px",
+                          color: "#ccc",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          whiteSpace: "nowrap",
+                        },
+                        children: `${post.title} | Kenneth Eversole`,
+                      },
+                    },
+                  ],
                 },
               },
+              // Branding
               {
-                type: "span",
+                type: "div",
                 props: {
                   style: {
-                    fontSize: "20px",
-                    color: "#666",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    fontSize: "22px",
                   },
-                  children: formatDate(post.date),
+                  children: [
+                    {
+                      type: "span",
+                      props: {
+                        style: { color: "#4a6cf7" },
+                        children: "Kenneth Eversole",
+                      },
+                    },
+                    {
+                      type: "span",
+                      props: {
+                        style: { color: "#555" },
+                        children: "|",
+                      },
+                    },
+                    {
+                      type: "span",
+                      props: {
+                        style: { color: "#ededed", fontWeight: "700" },
+                        children: "Blog",
+                      },
+                    },
+                  ],
                 },
               },
             ],
