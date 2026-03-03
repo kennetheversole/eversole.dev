@@ -246,7 +246,7 @@ async function main() {
     });
 
     const resvg = new Resvg(svg, {
-      fitTo: { mode: "width", value: WIDTH },
+      fitTo: { mode: "width", value: WIDTH * 2 },
     });
     const png = resvg.render().asPng();
 
