@@ -201,6 +201,32 @@
         <section class="body">
             {{ page.content | safe }}
         </section>
+
+        <div class="share-links">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?url={{ page.permalink | urlencode }}&text={{ page.title | urlencode }}" target="_blank" rel="noopener">
+                <img alt="Twitter/X" src="{{ get_url(path='social_icons/x-twitter.svg') }}"> Twitter/X
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.permalink | urlencode }}" target="_blank" rel="noopener">
+                <img alt="LinkedIn" src="{{ get_url(path='social_icons/linkedin.svg') }}"> LinkedIn
+            </a>
+            <a href="https://reddit.com/submit?url={{ page.permalink | urlencode }}&title={{ page.title | urlencode }}" target="_blank" rel="noopener">
+                <img alt="Reddit" src="{{ get_url(path='social_icons/reddit.svg') }}"> Reddit
+            </a>
+            <a href="mailto:?subject={{ page.title | urlencode }}&body={{ page.permalink | urlencode }}" rel="noopener">
+                <img alt="Email" src="{{ get_url(path='social_icons/email.svg') }}"> Email
+            </a>
+        </div>
+
+        <div class="comments-container">
+            <script src="https://utteranc.es/client.js"
+                repo="kennetheversole/eversole.dev"
+                issue-term="pathname"
+                theme="preferred-color-scheme"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
     </article>
 </main>
 {% endmacro content %}

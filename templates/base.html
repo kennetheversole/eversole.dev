@@ -7,6 +7,10 @@
 {% include "partials/header.html" %}
 
 <body>
+    {% if page and page.date %}
+    <div class="reading-progress" id="reading-progress"></div>
+    {% endif %}
+
     <div class="content">
         {% include "partials/nav.html" %}
 
@@ -15,6 +19,17 @@
         {% endblock main_content %}
         {% include "partials/footer.html" %}
     </div>
+
+    {% if page and page.date %}
+    <script>
+        window.addEventListener('scroll', function() {
+            var bar = document.getElementById('reading-progress');
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            var progress = (window.scrollY / docHeight) * 100;
+            bar.style.width = Math.min(progress, 100) + '%';
+        });
+    </script>
+    {% endif %}
 </body>
 
 </html>
