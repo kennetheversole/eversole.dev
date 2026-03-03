@@ -1,0 +1,11 @@
+{
+  "name": "eversole-dev",
+  "private": true,
+  "scripts": {
+    "generate-og": "bun run scripts/generate-og.ts"
+  },
+  "devDependencies": {
+    "satori": "^0.21.0",
+    "@resvg/resvg-js": "^2.6.0"
+  }
+}

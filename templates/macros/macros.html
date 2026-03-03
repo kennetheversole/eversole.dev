@@ -213,6 +213,9 @@
             <a href="https://reddit.com/submit?url={{ page.permalink | urlencode }}&title={{ page.title | urlencode }}" target="_blank" rel="noopener">
                 <img alt="Reddit" src="{{ get_url(path='social_icons/reddit.svg') }}"> Reddit
             </a>
+            <a href="https://news.ycombinator.com/submitlink?u={{ page.permalink | urlencode }}&t={{ page.title | urlencode }}" target="_blank" rel="noopener">
+                <img alt="Hacker News" src="{{ get_url(path='social_icons/hacker-news.svg') }}"> Hacker News
+            </a>
             <a href="mailto:?subject={{ page.title | urlencode }}&body={{ page.permalink | urlencode }}" rel="noopener">
                 <img alt="Email" src="{{ get_url(path='social_icons/email.svg') }}"> Email
             </a>
