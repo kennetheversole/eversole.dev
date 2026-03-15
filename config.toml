@@ -11,6 +11,7 @@ generate_feeds = true
 build_search_index = true
 minify_html = true
 feed_filenames = ["atom.xml"]
+ignored_content = ["*.excalidraw.md"]
 
 
 # The site theme to use.

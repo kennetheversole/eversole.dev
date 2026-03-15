@@ -1,0 +1,8 @@
+<figure class="drawing">
+  <picture>
+    <img src="/blog/Excalidraw/{{ name }}.excalidraw.dark.svg" alt="{{ alt | default(value=name) }}">
+  </picture>
+  {% if caption | default(value=false) %}
+    <figcaption>{{ caption }}</figcaption>
+  {% endif %}
+</figure>
