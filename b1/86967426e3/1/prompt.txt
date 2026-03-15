@@ -1,0 +1,53 @@
+fix this issue. I want to be able to embedd drawings into our blogs
+
+~/Documents/code/eversole.dev (master) » zola serve                                                                                                                            kenneth@Mac
+Building site...
+Warning: Highlight language compressed-json not found in blog/Excalidraw/Drawing 2026-03-15 18.07.35.excalidraw.md
+Checking all internal links with anchors.
+> Successfully checked 0 internal link(s) with anchors.
+-> Creating 8 pages (1 orphan) and 1 sections
+Error: Failed to serve the site
+Error: Failed to render page '/Users/kenneth/Documents/code/eversole.dev/content/blog/Excalidraw/Drawing 2026-03-15 18.07.35.excalidraw.md'
+Error: Reason: Failed to render 'page.html': error while rendering macro `post_macros::content`
+Error: Reason: Filter call 'urlencode' failed
+Error: Reason: Filter `urlencode` was called on an incorrect value: got `null` but expected a String
+
+---
+
+[Request interrupted by user for tool use]
+
+---
+
+no how can I pull these files into our content
+
+---
+
+did this
+
+  In Obsidian — enable auto-export in the Excalidraw plugin settings:
+  - Settings → Excalidraw → "Auto-export SVG" → toggle on
+  - This will generate a .svg file next to each .excalidraw.md file automatically
+
+---
+
+update the blog to track that
+
+---
+
+use the dark theme images
+
+---
+
+can we make it so it will automatically swap these files on build?
+
+---
+
+we will need to update the file
+
+---
+
+[Image: source: /var/folders/mn/8hbmf7m13qg0r_j10px8s8hr0000gn/T/TemporaryItems/NSIRD_screencaptureui_EzLVdK/Screenshot 2026-03-15 at 6.17.34 PM.png]
+
+---
+
+okay lets add all of this. Do not co author nor include the test blog

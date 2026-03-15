@@ -1,0 +1,35 @@
+{
+  "cli_version": "0.4.9",
+  "checkpoint_id": "b186967426e3",
+  "session_id": "c996b77c-b407-439c-a346-c25429131795",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-15T23:19:58.467154Z",
+  "branch": "master",
+  "checkpoints_count": 6,
+  "files_touched": [
+    "build.sh",
+    "config.toml",
+    "content/blog/.obsidian/core-plugins.json",
+    "content/blog/.obsidian/workspace.json",
+    "content/blog/Excalidraw/_index.md",
+    "templates/shortcodes/drawing.html"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "e65c52b564ea",
+  "token_usage": {
+    "input_tokens": 51,
+    "cache_creation_tokens": 28326,
+    "cache_read_tokens": 938390,
+    "output_tokens": 7761,
+    "api_call_count": 35
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-15T23:19:58.400437Z",
+    "agent_lines": 70,
+    "human_added": 946,
+    "human_modified": 66,
+    "human_removed": 0,
+    "total_committed": 1081,
+    "agent_percentage": 6.475485661424607
+  }
+}
