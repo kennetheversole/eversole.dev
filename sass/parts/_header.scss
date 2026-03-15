@@ -90,12 +90,25 @@ header .socials {
 
 .meta {
     color: #999;
-    display: flexbox;
-    /* This changes the meta class to use flexbox, which ensures inline display */
+    display: flex;
     align-items: center;
-    /* Aligns items vertically in the middle */
     flex-wrap: wrap;
-    /* Allows items to wrap as needed */
+    gap: 0.35rem;
+    font-size: 0.9rem;
+}
+
+.meta-sep {
+    color: #666;
+}
+
+.post-tag {
+    border-bottom: none;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+
+    &:hover {
+        border-bottom: 1px solid var(--primary-color);
+    }
 }
 
 #dark-mode-toggle>img {

@@ -1,6 +1,7 @@
 +++
 title = "We Automated Everything Except Knowing What's Going On"
 date = 2026-03-02
+description = "AI collapsed the cost of building software, but the systems underneath are buckling. We're entering an era where everyone can build and nobody understands what they've built."
 author = "Kenneth Eversole"
 
 [taxonomies]

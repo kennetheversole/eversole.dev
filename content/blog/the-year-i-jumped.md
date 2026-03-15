@@ -1,6 +1,7 @@
 +++
 title = "The Year I Jumped"
 date = 2026-02-08
+description = "I left a good job at Cloudflare to build OpsCompanion. This is the honest story of what that year looked like — the fundraising, the fear, and why I'd do it again."
 author = "Kenneth Eversole"
 
 [taxonomies]

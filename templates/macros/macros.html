@@ -89,12 +89,13 @@
     <div class="page-header">
         {{ title }}<span class="primary-color" style="font-size: 1.6em">.</span>
     </div>
-{% endmacro content %}
+{% endmacro page_header %}
 
 {% macro home_page(section) %}
 <main>
     <article>
-        <section class="body hero">
+        <section class="body intro">
+            <div class="intro-greeting" aria-hidden="true">hey.</div>
             {{ section.content | safe }}
         </section>
     </article>
@@ -105,31 +106,25 @@
 <main>
     <article>
         <div class="title">
-            {#<h1 class="title">{{ page.title }}</h1>#}
             {{ post_macros::page_header(title=page.title) }}
 
                 <div class="meta">
-                    {% if page.date %}
-                        Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-                    {% endif %}
-
-                    {% if page.updated %}
-                        :: Updated on <time>{{ page.updated | date(format="%Y-%m-%d") }}</time>
-                    {% endif %}
-
-                    {% if page.extra.read_time %}
-                        :: <time>{{ page.reading_time }}</time> Min Read
-                    {% endif %}
-
-                    {# Inline display of tags directly after the date #}
-                    {% if page.taxonomies and page.taxonomies.tags %}
-                            <span class="tags-label"> :: Tags:</span>
-                            <span class="tags">
-                                {%- for tag in page.taxonomies.tags %}
-                                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="post-tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-                                {% endfor %}
-                            </span>
-                    {% endif %}
+                    {%- if page.date %}
+                        <time>{{ page.date | date(format="%b %-d, %Y") }}</time>
+                    {%- endif -%}
+                    {%- if page.updated %}
+                        <span class="meta-sep">&middot;</span> Updated <time>{{ page.updated | date(format="%b %-d, %Y") }}</time>
+                    {%- endif -%}
+                    {%- if page.extra.read_time | default(value=false) or config.extra.read_time | default(value=false) %}
+                        <span class="meta-sep">&middot;</span> {{ page.reading_time }} min read
+                    {%- endif -%}
+                    {%- if page.taxonomies and page.taxonomies.tags %}
+                        <span class="meta-sep">&middot;</span>
+                        {%- for tag in page.taxonomies.tags %}
+                            <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="post-tag">{{ tag }}</a>
+                            {%- if not loop.last %}, {% endif -%}
+                        {% endfor -%}
+                    {%- endif %}
 
                     {# View the page on GitHub #}
                     {% if page.extra.repo_view | default(value=false) %}
@@ -200,6 +195,27 @@
         <section class="body">
             {{ page.content | safe }}
         </section>
+
+        <div class="author-bio">
+            {% if config.extra.profile_photo %}
+            <img class="author-bio-photo" src="{{ get_url(path=config.extra.profile_photo) }}" alt="{{ config.extra.author | default(value='Author') }}">
+            {% endif %}
+            <div class="author-bio-info">
+                <strong>{{ config.extra.author | default(value="Kenneth Eversole") }}</strong>
+                <p>Founder of <a href="https://opscompanion.ai/" rel="noopener">OpsCompanion</a>. Building at the intersection of engineering, operations, and innovation.</p>
+                <div class="author-bio-links">
+                    {% if config.extra.twitter_username %}
+                    <a href="https://x.com/{{ config.extra.twitter_username }}" rel="noopener noreferrer">Twitter/X</a>
+                    {% endif %}
+                    {% if config.extra.linkedin %}
+                    <a href="https://linkedin.com/in/{{ config.extra.linkedin }}" rel="noopener noreferrer">LinkedIn</a>
+                    {% endif %}
+                    {% if config.extra.github %}
+                    <a href="https://github.com/{{ config.extra.github }}" rel="noopener noreferrer">GitHub</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
 
         <div class="share-links">
             <span>Share:</span>

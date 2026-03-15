@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kenneth Eversole, kenneth@eversole.dev">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.svg" />
+
+    {# Canonical URL #}
+    {% if current_url %}
+        <link rel="canonical" href="{{ current_url | safe }}" />
+    {% elif page %}
+        <link rel="canonical" href="{{ get_url(path=page.path) | safe }}" />
+    {% else %}
+        <link rel="canonical" href="{{ config.base_url | safe }}" />
+    {% endif %}
+
+    {# Preconnect for external resources #}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     {% if page.extra.meta %}
          <!-- the meta data config goes here  -->
          {% for data in page.extra.meta %}
@@ -103,9 +116,16 @@
      {% if not page_has_description %}
          {% if page.description %}
              <meta name="description" content="{{ page.description }}" />
+         {% elif section and section.description %}
+             <meta name="description" content="{{ section.description }}" />
          {% elif config.description %}
              <meta name="description" content="{{ config.description }}" />
          {% endif %}
+    {% endif %}
+
+    {# Noindex thin taxonomy pages #}
+    {% if term and term.pages | length < 3 %}
+        <meta name="robots" content="noindex, follow" />
     {% endif %}
 
     {# Favicon #}
@@ -341,14 +361,17 @@
         {% if config.extra.profile_photo %}
             "image": "{{ get_url(path=config.extra.profile_photo) }}",
         {% endif %}
-        "jobTitle": "Senior Software Engineer",
+        "jobTitle": "Founder",
         "worksFor": {
             "@type": "Organization",
-            "name": "Cloudflare"
+            "name": "OpsCompanion"
         },
         "sameAs": [
             {% if config.extra.github %}
                 "https://github.com/{{ config.extra.github }}",
+            {% endif %}
+            {% if config.extra.twitter_username %}
+                "https://x.com/{{ config.extra.twitter_username }}",
             {% endif %}
             {% if config.extra.linkedin %}
                 "https://linkedin.com/in/{{ config.extra.linkedin }}"
@@ -356,4 +379,34 @@
         ]
     }
     </script>
+
+    {# BreadcrumbList schema for blog posts #}
+    {% if page and page.date %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{ config.base_url }}"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "{{ config.base_url }}/blog"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "{{ page.title }}",
+                "item": "{{ page.permalink | safe }}"
+            }
+        ]
+    }
+    </script>
+    {% endif %}
 </head>

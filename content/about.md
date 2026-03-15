@@ -62,7 +62,7 @@ While not exhaustive here is a list of the various business related things I am 
 * Technical due diligence for Venture Capital firms.
 
 
-Let's build something impactful together  [Send me an Email](mailto:kenneth%eversole.dev)
+Let's build something impactful together  [Send me an Email](mailto:kenneth@eversole.dev)
 
 
 

@@ -8,6 +8,19 @@
 @import "parts/table.scss";
 @import "parts/tags.scss";
 
+// Screen reader only utility
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 :root {
   /* Used for: block comment, hr, ... */
   --border-color: var(--border-color);
@@ -82,10 +95,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 30vh;
 
   p {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.3;
     max-width: 600px;
@@ -103,6 +116,44 @@ html {
   }
 }
 
+.intro {
+  padding: 2rem 0;
+
+  .intro-greeting {
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--text-2, #555);
+    opacity: 0.3;
+    line-height: 1;
+    margin: 0 0 0.25rem 0;
+    font-family: var(--header-font);
+    user-select: none;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: var(--header-font);
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  a {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
 .reading-progress {
   position: fixed;
   top: 0;
@@ -112,6 +163,7 @@ html {
   background-color: var(--primary-color);
   z-index: 9999;
   transition: width 0.1s linear;
+  will-change: width;
 }
 
 .share-links {
@@ -157,8 +209,127 @@ html {
   }
 }
 
+.author-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--bg-1);
+  border: 1px solid var(--border-color);
+}
+
+.author-bio-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.author-bio-info {
+  strong {
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-1, #999);
+  }
+}
+
+.author-bio-links {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .author-bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-bio-links {
+    justify-content: center;
+  }
+}
+
 .comments-container {
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 3px solid var(--border-color);
+}
+
+.blog-list {
+  margin-top: 0;
+}
+
+.blog-list-heading {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--text-2, #555);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: var(--header-font);
+  user-select: none;
+}
+
+.blog-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-entry {
+  display: flex;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  gap: 2rem;
+
+  time {
+    flex-shrink: 0;
+    width: 140px;
+    color: var(--text-1, #999);
+    font-size: 0.95rem;
+  }
+
+  a {
+    color: var(--primary-color);
+    border-bottom: none;
+    font-size: 1.15rem;
+
+    &:hover {
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .blog-list-heading {
+    font-size: 3rem;
+  }
+
+  .blog-entry {
+    flex-direction: column;
+    gap: 0.25rem;
+
+    time {
+      width: auto;
+    }
+  }
 }

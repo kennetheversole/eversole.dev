@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
-description = "The personal site of whom Kenneth has designed and built impactful systems that power global-scale operations, improve security, and drive efficiency. From leading infrastructure transformations at Cloudflare to optimizing AI-driven platforms at Balto, his career reflects a deep understanding of how technology shapes industries. He thrives at the intersection of engineering, business, and innovation, advising startups, conducting technical due diligence for venture capital firms, and even exploring creative storytelling through film production. Kenneth believes engineering should not only solve problems but also inspire new possibilities—pushing the boundaries of what’s possible while ensuring systems remain practical, resilient, and human-centered"
-title = "Eversole.dev"
+description = "Kenneth Eversole builds software at the intersection of engineering, operations, and innovation. Creator of OpsCompanion. Writing about software, infrastructure, and startups."
+title = "Kenneth Eversole — Builder, Engineer, Operator"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 # The default language; used in feeds.
@@ -41,14 +41,16 @@ socials = [
 
 
 
-profile_photo = "/images/profile_photo.svg"
+profile_photo = "/images/Logo_W_Text.png"
 #profiles
 github = "kennetheversole"
 linkedin = "kennetheversole"
 email = "kenneth@eversole.dev"
 
+read_time = true
 favicon = "/images/favicon.svg"
 author = "Kenneth Eversole"
+twitter_username = "kennetheversole"
 
 # Open Graph default image (1200x630px recommended)
 default_og_image = "og-default.png"
