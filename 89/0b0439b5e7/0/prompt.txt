@@ -1,0 +1,43 @@
+add a new blog for this
+
+# The 80% Nobody Celebrates
+
+There's an old study, maybe from Harvard, about team sizing. Eighty percent of the work will be done by twenty percent of the team. Whittle a team of ten down to five, and one person will carry most of it. For some reason, this ratio holds across nearly everything.
+
+When it comes to software, though, we have a strange inverse situation. The twenty percent gets enormous amounts of attention. That's the sexy feature work. Users want it, salespeople pitch it, leadership celebrates it. What most people never stop to comprehend is the other eighty percent, the work that makes the thing actually run. Software does not magically exist somewhere. It runs on a computer. That computer needs cooling, electricity, internet. All of it costs money. All of it is physical. Hard drives break. The internet breaks. Fiber lines get ripped in half. And because every piece of technology is, in reality, a collection of tens of thousands of other little pieces of software that are constantly being updated themselves, it's an ever-moving target.
+
+## What the 80% Actually Looks Like
+
+I spent years as a site reliability engineer at Cloudflare, first specializing in Kafka, which powered all of the logging infrastructure, and later managing the existing infrastructure where we stored customer data on R2, writing a lot of the observability tooling for the new system. If you had shadowed me for a week, more than eighty percent of what you'd have seen was maintenance work.
+
+The average week started with an absolute ton of meetings. Daily standup. Stakeholder meetings with the internal teams we supported, usually just checking in: what's going on, is there other work you need from us. Then you'd get a couple hours of deep focus time, but even that was typically spent reviewing PRs, reading emails, catching up on other people's work, because you are almost never working in isolation. The rest was toil. Toil is this word we use for work that is low, boring, horrible, monotonous, and laborious. And everything we do is taxed by context switching.
+
+The tools themselves are very complicated. When you're switching between five different complicated tools throughout the day, you never really go deep into any of them unless something is horrendously broken. And when something is horrendously broken, the psychological weight of it is enormous. Everyone is angry. Someone's worst moment becomes your normal workday. A hard drive fills up, a program crashes, a customer can't access their data. You have to be able to quickly deduce context out of something extremely fast, and you're doing this while multiple people are upset and waiting on you.
+
+There's something to be said that SRE work is not a terminal position. By that I mean: you can be a doctor for thirty years, a fireman for thirty years, a researcher for thirty years. I don't know very many SREs who have been in on-call rotations for a very long time. The context switching alone grinds people down.
+
+When I worked at a startup called Balto, we hit a wall that I think most growing software companies eventually hit. The team had shipped a bunch of stuff early on, following that common wisdom of doing a bunch of things that aren't scalable but are sustainable, meaning you solve problems fast, make money, and figure out the architecture later. All those early decisions we made to earn the right to even hire someone like me became such a burden that for two months, the entire company stopped delivering new features. The salespeople were told to stop selling. The whole company entered survival mode just to keep the existing product functional.
+
+It was smart of leadership to catch it when they did. They had enough money, they identified the problem early enough that it wasn't fatal. But it was a very real reminder that the thing has to work. And that's the part people don't realize. Things have to work. Most things are just supply chain problems.
+
+## Rot, Debt, and the Fantasy of Zero Maintenance
+
+People like to call this technical debt, and they usually say it like it's something shameful. But tech debt is just the balance between making a choice that works right now versus making sure stuff works tomorrow. It's called debt in a very particular fashion. You buy a home and you take out debt. That's not bad. It's just part of the process. I actually think it's a kind of insanity that we treat it as bad.
+
+The way I think about it is like food in the fridge. You go out and buy great ingredients with the full intention of cooking something wonderful. Then life happens. You get busy, you're tired, you grab takeout, and a week later everything you bought has gone bad. Tech debt works the same way. You build a bunch of features, ship a bunch of things, and over time some of them didn't perform well, or the underlying dependencies shifted, or the world just moved. Now you're balancing the complexity those features added against the reality that you still need to go buy more food. You still need to build the next thing. But the old things are rotting.
+
+And that rotting, that constant maintenance, that is the entirety of operations. To most degree, tech debt is the operational tax. There's a fantasy version of this where all of it just magically disappears, like little kids putting boogers under their bed and pretending they're gone. It would be wonderful if every time I built a piece of software on top of a thousand dependencies, I never had to worry about updating them. If running everything on servers didn't require constant attention. But it does.
+
+## The Walls, Not the Castle
+
+Here's what I want to say plainly, and it's something I've come to believe deeply: I don't like calling this a tax, because I think the operational eighty percent is actually where great software is defined.
+
+In my entire career, most of my best conversations have been with people who are very afraid of scaling, or afraid of being left behind. What that fear tells me is that people know how valuable it is to build something right. When you build something of real value, people want to break it. It itself wants to break sometimes. Being able to hold on to that, even though it is full of chaos, is how technology becomes extremely valuable. The biggest companies in the world put a staggering amount of money and time and effort into managing this. Facebook, even though they are a social media app, lays undersea cables. That's how seriously they take the infrastructure. Google invests billions in custom data centers. The level of expertise and talent on their production engineering teams is literally, at times, the best in the world. Nobody sees it. Users just feel it.
+
+To have a castle that can be defended against an invading army, you need walls. If you don't build the walls, you don't have a castle. You have a little shack in the middle of a field. The operational team builds the walls. They are the night's watch. And it's also the more computer-science-heavy part of the problem. You have to understand how computers work on a deep fundamental level to be able to improve and perform at this work. It requires systems-level thinking that goes far beyond shipping a button to production.
+
+The eighty percent is where the real engineering lives. We just haven't figured out how to celebrate it yet.
+
+---
+
+git add, commit and push the origin

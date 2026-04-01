@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.4.9",
+  "checkpoint_id": "890b0439b5e7",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "content/blog/the-80-percent-nobody-celebrates.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/89/0b0439b5e7/0/metadata.json",
+      "transcript": "/89/0b0439b5e7/0/full.jsonl",
+      "context": "/89/0b0439b5e7/0/context.md",
+      "content_hash": "/89/0b0439b5e7/0/content_hash.txt",
+      "prompt": "/89/0b0439b5e7/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 9,
+    "cache_creation_tokens": 11057,
+    "cache_read_tokens": 93402,
+    "output_tokens": 2476,
+    "api_call_count": 5
+  }
+}
