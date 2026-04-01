@@ -268,6 +268,37 @@ html {
   }
 }
 
+.subscribe-cta {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--bg-1);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.subscribe-cta-text {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+}
+
+.subscribe-cta-button {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+  border-radius: 6px;
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  &:hover {
+    opacity: 0.9;
+    border-bottom: none;
+    background-color: var(--primary-color);
+  }
+}
+
 .comments-container {
   margin-top: 2rem;
   padding-top: 1.5rem;
