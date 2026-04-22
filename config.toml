@@ -19,7 +19,7 @@ taxonomies = [{ name = "tags", feed = true }]
 
 
 [markdown]
-highlight_code = true
+highlighting = { theme = "github-dark" }
 
 
 [extra]
