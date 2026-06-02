@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.9",
+  "checkpoint_id": "8354e313efa0",
+  "session_id": "5656f2ba-d1cd-49f8-b699-3a1b3aef1cda",
+  "strategy": "manual-commit",
+  "created_at": "2026-06-02T14:36:13.866224Z",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "content/blog/go-west-nerd.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "e26cfed84561",
+  "token_usage": {
+    "input_tokens": 3136,
+    "cache_creation_tokens": 21841,
+    "cache_read_tokens": 139685,
+    "output_tokens": 5598,
+    "api_call_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-06-02T14:36:13.817024Z",
+    "agent_lines": 96,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 96,
+    "agent_percentage": 100
+  }
+}
