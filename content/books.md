@@ -9,6 +9,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
 # 2026
 - [Without Their Permission: The Story of Reddit and a Blueprint for How to Change the World](https://bookshop.org/p/books/without-their-permission-the-story-of-reddit-and-a-blueprint-for-how-to-change-the-world-alexis-ohanian/132ab858b9a2882f?ean=9781455520015&next=t)
     - Author: Alexis Ohanian
+- [A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](https://bookshop.org/p/books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains-max-s-bennett/d78276bee2ce3028)
+    - Author: Max S. Bennett
 
 # 2025
 - [Outlive](https://bookshop.org/p/books/outlive-the-science-and-art-of-longevity-bill-gifford/8471d6ef5aae64a2)
