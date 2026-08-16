@@ -14,9 +14,15 @@ I am currently in the middle of a life long exploration to deeply understand the
 This belief originates from over two decades of experience building, researching, and philosophizing the complex systems I interact with, live in, and want to grow.
 
 
-### Founder & CEO of OpsCompanion
+### Co-founder & CEO of OpsCompanion
 
-I am currently the Founder and CEO of [OpsCompanion](https://opscompanion.ai/), where I am building the future of intelligent operations and system management.
+I am the co-founder and CEO of [OpsCompanion](https://opscompanion.ai/), an AI security company. We build **Standpipe**, the on-device control layer for AI — it shows companies every AI tool running across their employee devices and controls what each one can see, send, and do.
+
+The thesis is what I call **sovereign intelligence**. Over the last year the industry learned that the model matters far less than the harness and the context fed into it. That makes one question central, and it is not "which model is smartest." It is *where does my context live, and who owns the box the inference runs in?* If you don't own the chain end to end — data in, weights, inference, output — you cannot guarantee that no one else has been in it. Supply chain integrity is an old idea; AI is just the newest place it applies.
+
+We committed to this early. Standpipe was in development in May 2026, and I had the sovereign intelligence argument recorded on June 2nd. The rest of the industry has been arriving at the neighboring conclusion since: Google's [Beyond Zero](https://doi.org/10.1145/3819083) in the June 2026 issue of ACM Queue, making the case that zero trust collapses under AI agents and authorization has to shrink to the individual action; Cloudflare's [Agent Access Model](https://blog.cloudflare.com/the-agent-access-model/) in August, making the case that enforcement has to live in the harness and the network rather than the prompt.
+
+I agree with both, and I think both stop one step short. If the layer enforcing your agents belongs to someone else, the trust boundary didn't shrink — it moved to a landlord. That is the step OpsCompanion took first, and it is why Standpipe enforces on hardware you own.
 
 
 ### Building Large System With Impact 

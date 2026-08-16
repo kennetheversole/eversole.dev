@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
-description = "Kenneth Eversole builds software at the intersection of engineering, operations, and innovation. Creator of OpsCompanion. Writing about software, infrastructure, and startups."
-title = "Kenneth Eversole — Builder, Engineer, Operator"
+description = "Kenneth Eversole is co-founder and CEO of OpsCompanion, the AI security company behind Standpipe — the on-device control layer for AI. Writing about AI security, sovereign intelligence, and infrastructure."
+title = "Kenneth Eversole — AI Security, Sovereign Intelligence, Infrastructure"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 # The default language; used in feeds.
@@ -36,6 +36,9 @@ menu = [
 socials = [
     { name = "github", url = "https://github.com/kennetheversole/", icon = "github" },
     { name = "linkedin", url = "https://www.linkedin.com/in/kennetheversole/", icon = "linkedin" },
+    { name = "x", url = "https://x.com/kennetheversole", icon = "x-twitter" },
+    { name = "reddit", url = "https://www.reddit.com/user/kennetheops/", icon = "reddit" },
+    { name = "instagram", url = "https://www.instagram.com/kenneth.eversole/", icon = "instagram" },
     { name = "email", url = "mailto:kenneth@eversole.dev", icon = "email" },
     { name = "rss", url = "https://eversole.dev/atom.xml", icon = "rss"}
 ]
@@ -46,6 +49,8 @@ profile_photo = "/images/Logo_W_Text.png"
 #profiles
 github = "kennetheversole"
 linkedin = "kennetheversole"
+reddit = "kennetheops"
+instagram = "kenneth.eversole"
 email = "kenneth@eversole.dev"
 
 read_time = true

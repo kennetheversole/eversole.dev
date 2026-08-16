@@ -1,7 +1,7 @@
 {
   "name": "Eversole.dev - Kenneth Eversole",
   "short_name": "Eversole.dev",
-  "description": "The personal site of Kenneth Eversole — Founder of OpsCompanion. Writing about software engineering, operations, infrastructure, and startups.",
+  "description": "The personal site of Kenneth Eversole — co-founder and CEO of OpsCompanion, the AI security company behind Standpipe. Writing about AI security, sovereign intelligence, and infrastructure.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1a1a1a",

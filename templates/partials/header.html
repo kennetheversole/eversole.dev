@@ -361,17 +361,32 @@
         {% if config.extra.profile_photo %}
             "image": "{{ get_url(path=config.extra.profile_photo) }}",
         {% endif %}
-        "jobTitle": "Founder",
+        "jobTitle": "Co-founder & CEO",
         "worksFor": {
             "@type": "Organization",
-            "name": "OpsCompanion"
+            "name": "OpsCompanion",
+            "url": "https://opscompanion.ai/",
+            "description": "AI security company building Standpipe, the on-device control layer for AI."
         },
+        "knowsAbout": [
+            "AI security",
+            "Sovereign intelligence",
+            "AI agent governance",
+            "Zero trust architecture",
+            "Infrastructure engineering"
+        ],
         "sameAs": [
             {% if config.extra.github %}
                 "https://github.com/{{ config.extra.github }}",
             {% endif %}
             {% if config.extra.twitter_username %}
                 "https://x.com/{{ config.extra.twitter_username }}",
+            {% endif %}
+            {% if config.extra.reddit %}
+                "https://www.reddit.com/user/{{ config.extra.reddit }}/",
+            {% endif %}
+            {% if config.extra.instagram %}
+                "https://www.instagram.com/{{ config.extra.instagram }}/",
             {% endif %}
             {% if config.extra.linkedin %}
                 "https://linkedin.com/in/{{ config.extra.linkedin }}"
