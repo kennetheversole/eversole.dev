@@ -11,6 +11,8 @@ This is a comprehensive record of the books I have read, thoughtfully cataloged 
     - Author: Alexis Ohanian
 - [A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](https://bookshop.org/p/books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains-max-s-bennett/d78276bee2ce3028)
     - Author: Max S. Bennett
+- [The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](https://bookshop.org/p/books/the-innovator-s-dilemma-when-new-technologies-cause-great-firms-to-fail-clayton-m-christensen/9627feb7ecf91b3c)
+    - Author: Clayton M. Christensen
 
 # 2025
 - [Outlive](https://bookshop.org/p/books/outlive-the-science-and-art-of-longevity-bill-gifford/8471d6ef5aae64a2)
