@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://eversole.dev"
-description = "Kenneth Eversole is co-founder and CEO of OpsCompanion, the AI security company behind Standpipe — the on-device control layer for AI. Writing about AI security, sovereign intelligence, and infrastructure."
-title = "Kenneth Eversole — AI Security, Sovereign Intelligence, Infrastructure"
+description = "Kenneth Eversole is co-founder and CEO of OpsCompanion, an AI security company building Standpipe, an on-device control layer for AI. Writing about AI security, sovereign AI, and infrastructure."
+title = "Kenneth Eversole | AI Security and Sovereign AI"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 # The default language; used in feeds.
@@ -45,7 +45,7 @@ socials = [
 
 
 
-profile_photo = "/images/Logo_W_Text.png"
+profile_photo = "/images/kenneth-eversole.jpg"
 #profiles
 github = "kennetheversole"
 linkedin = "kennetheversole"

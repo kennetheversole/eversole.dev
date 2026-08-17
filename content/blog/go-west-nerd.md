@@ -54,7 +54,7 @@ There is no clean way to monetize sovereign AI. You can monetize the agent harne
 
 ## Sovereignty is a Competition
 
-There is another angle that gets overlooked, which is that sovereign AI is partly driven by competition. Think about restaurants. You can't patent a recipe. A guest might know the base of a dish – like pasta – but some ingredients and steps that give it its particular flavor and texture will be kept a secret by the chef.
+There is another angle that gets overlooked, which is that sovereign AI is partly driven by competition. Think about restaurants. You can't patent a recipe. A guest might know the base of a dish, like pasta, but some ingredients and steps that give it its particular flavor and texture will be kept a secret by the chef.
 
 Companies are starting to demand the same thing from their models. They want their secret sauce from their data to work for their customers. They would never want to have their competitors accessing what makes their business uniquely theirs.
 
@@ -87,7 +87,7 @@ A group of adventurers once went east and found a different path to India. But i
 
 [1] <https://arxiv.org/abs/2310.10844>
 
-[2] InstaTunnel's Substack — *Model Weight "Mirror Squatting": The Backdoored Hub*
+[2] InstaTunnel's Substack, *Model Weight "Mirror Squatting": The Backdoored Hub*
 
 [3] <https://arxiv.org/abs/2504.16743>
 

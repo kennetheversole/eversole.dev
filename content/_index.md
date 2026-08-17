@@ -1,27 +1,25 @@
 +++
 title= "Welcome"
 template = "homepage.html"
-description = "Kenneth Eversole is co-founder and CEO of OpsCompanion, building Standpipe — the on-device control layer for AI. We shipped it before the industry named the problem."
+description = "Kenneth Eversole builds OpsCompanion, an AI security company. Security is the thing that will let AI reach ordinary people, and almost nobody is building it."
 +++
 
 ## I'm Kenneth, and I build things that matter.
 
-Companies gave AI the same capabilities as their employees — read email, open files, pull customer records, modify and delete work — and skipped the part where you decide what it's allowed to do. Most still can't answer three questions: **What AI is running? What can it access? Can we stop it before it does something damaging?**
+Electricity sat around for decades before it showed up in ordinary houses. The generators worked fine. What took so long was everything wrapped around the generator, the fuses and the insulation and the grounding and eventually a written code, because the early wiring burned houses down and nobody was going to run current through the wall behind their kid's bed on a promise. The safety work is what actually put power in every home, and we mostly remember the people who built the dynamos.
 
-I'm co-founder and CEO of [OpsCompanion](https://opscompanion.ai/). We build **Standpipe**, the on-device control layer for AI: visibility into every AI tool running across your fleet, and control over what each one can see, send, and do. Enforcement runs on the machine, because the machine is the last thing you still own.
+AI is sitting in that same gap right now, and it is going to stay there until someone does the boring part.
 
-### We were early. Here's the receipt.
+We have handed these systems the same reach we give employees. They read email, open files, pull customer records, change and delete work, and they do all of it in seconds across systems that were never built to tell them no. Companies did this because they were genuinely afraid of being left behind, which is a rational thing to be afraid of, and the result is that most of them cannot tell you what AI is running inside their own walls, what it can touch, or whether they could stop it before it did something they can't take back.
 
-Standpipe was already in development in May 2026. By June 2nd I had the thesis on tape — that context is king, so the only question that matters is where your context lives and who owns the box the inference runs in.
+I run [OpsCompanion](https://opscompanion.ai/), where we build Standpipe. It sits on the device, shows you every AI tool running across your machines, and governs what each one is allowed to see, send, and do. It runs on your hardware instead of ours because I don't think you have contained anything if the containment belongs to a vendor. You have moved the problem to a landlord.
 
-Google's [Beyond Zero](https://doi.org/10.1145/3819083) landed in the June 2026 issue of ACM Queue, arguing that zero trust breaks under AI agents and the trust boundary has to shrink from the application down to the individual action. Cloudflare's [Agent Access Model](https://blog.cloudflare.com/the-agent-access-model/) followed in August, arguing that enforcement belongs in the harness and the network — never in the prompt.
+I put this argument up here on June 2nd in [Go West, Nerd.](/blog/go-west-nerd/), and the part I still believe is that context is king, so the only sovereignty question worth asking is where your context lives and who owns the box the inference runs in. Two weeks later Google published [Beyond Zero](https://doi.org/10.1145/3819083) in ACM Queue, arguing that zero trust comes apart under AI agents and that authorization has to shrink all the way down to the individual action. Cloudflare followed in August with [the Agent Access Model](https://blog.cloudflare.com/the-agent-access-model/), arguing that enforcement belongs in the harness and the network and never in the prompt. Both are correct, and I was glad to read them, and both stop one step short, because if the thing doing the enforcing is rented then the boundary is rented too.
 
-Both are right. Both describe the machine we were already building. And both stop one step short of the conclusion: if the layer enforcing your agents is somebody else's cloud, you didn't shrink the trust boundary — you rented it. That last step is the one we took first, and it's why Standpipe runs on your hardware instead of ours.
+None of this is security for its own sake. A billion people are about to point real computational power at their money, their health, their marriages, and their kids, and they will have to hand it their entire context, because that is the only way any of it gets useful. They will not do that until the box is theirs, and honestly they should not. The fuse box is what made electricity domestic. Something has to play that role here or AI stays a thing that large companies rent and ordinary people are quietly harvested by.
 
-We call it **sovereign intelligence**: you own the data going in, the box it runs in, and the output that comes out. End to end, bolt to bolt. Anything less and you cannot say who else has been in the chain.
+Before this I did infrastructure at Cloudflare on R2, was an early engineer at Balto, advised startups around St. Louis, and did technical due diligence for VCs. I have been the one paged at 3am.
 
-Before this, I spent years in the trenches — infrastructure at Cloudflare, AI-driven platforms at Balto, advising startups, and doing technical due diligence for VCs. I know what breaks at scale because I've been the one paged at 3am to fix it.
+What I keep turning over is whether we get this layer built before the first genuinely catastrophic consumer-scale incident or after it. Everything I know about the last twenty years of software says after. I would like to be wrong, and Standpipe is my attempt at being wrong.
 
-Your business is too important to run on someone else's terms.
-
-Find me on [x (twitter)](https://x.com/kennetheversole) and [LinkedIn](https://www.linkedin.com/in/kennetheversole/) — my DMs are open.
+Find me on [x (twitter)](https://x.com/kennetheversole), [reddit](https://www.reddit.com/user/kennetheops/), [instagram](https://www.instagram.com/kenneth.eversole/), and [LinkedIn](https://www.linkedin.com/in/kennetheversole/). My DMs are open.

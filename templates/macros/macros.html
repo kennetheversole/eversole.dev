@@ -95,6 +95,15 @@
 <main>
     <article>
         <section class="body intro">
+            <div class="intro-header">
+                <img class="intro-photo"
+                     src="{{ get_url(path='images/kenneth-eversole.jpg') }}"
+                     srcset="{{ get_url(path='images/kenneth-eversole-400.jpg') }} 400w, {{ get_url(path='images/kenneth-eversole.jpg') }} 800w"
+                     sizes="(max-width: 600px) 120px, 160px"
+                     width="160" height="160"
+                     alt="Kenneth Eversole"
+                     loading="eager" decoding="async">
+            </div>
             <div class="intro-greeting" aria-hidden="true">hey.</div>
             {{ section.content | safe }}
         </section>
@@ -202,7 +211,7 @@
             {% endif %}
             <div class="author-bio-info">
                 <strong>{{ config.extra.author | default(value="Kenneth Eversole") }}</strong>
-                <p>Co-founder and CEO of <a href="https://opscompanion.ai/" rel="noopener">OpsCompanion</a>, building Standpipe — the on-device control layer for AI. Writing about AI security and sovereign intelligence.</p>
+                <p>Co-founder and CEO of <a href="https://opscompanion.ai/" rel="noopener">OpsCompanion</a>, building Standpipe, an on-device control layer for AI. Writing about AI security and sovereign AI.</p>
                 <div class="author-bio-links">
                     {% if config.extra.twitter_username %}
                     <a href="https://x.com/{{ config.extra.twitter_username }}" rel="noopener noreferrer">Twitter/X</a>
