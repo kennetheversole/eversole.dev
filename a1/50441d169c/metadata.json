@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.4.9",
+  "checkpoint_id": "a150441d169c",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "config.toml",
+    "content/_index.md",
+    "content/about.md",
+    "content/blog/first.md",
+    "content/blog/go-west-nerd.md",
+    "content/blog/the-year-i-jumped.md",
+    "sass/main.scss",
+    "static/manifest.json",
+    "templates/macros/macros.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/a1/50441d169c/0/metadata.json",
+      "transcript": "/a1/50441d169c/0/full.jsonl",
+      "context": "/a1/50441d169c/0/context.md",
+      "content_hash": "/a1/50441d169c/0/content_hash.txt",
+      "prompt": "/a1/50441d169c/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 70,
+    "cache_creation_tokens": 137554,
+    "cache_read_tokens": 4325888,
+    "output_tokens": 17286,
+    "api_call_count": 35
+  }
+}
